@@ -1,0 +1,165 @@
+:root {
+  --primary-color: #205081;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 100%;
+  font-weight: 500;
+  font-family: "Nunito", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Consolas;
+  color: crimson;
+}
+#wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "sidebar . content content . ";
+}
+
+p {
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+}
+
+.content {
+  grid-area: content;
+  margin-left: 300px;
+  max-width: 800px;
+  padding: 1.5rem 1rem;
+}
+.main-section {
+  margin: 1rem 0;
+}
+.sidebar {
+  grid-area: sidebar;
+  padding: 0 1rem;
+  border-right: 3px solid #eee;
+}
+
+.sidebar a {
+  color: #000;
+  font-size: 1.2rem;
+  display: block;
+}
+.sidebar h1 {
+  margin: 1rem 0;
+}
+#navbar {
+  max-width: 300px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+  z-index: 1;
+  background: #fff;
+}
+
+.html-intro {
+  margin: 0 2rem;
+}
+
+.snapshot {
+  background: #eee;
+  padding: 1rem 1rem;
+  color: #000;
+  font-weight: 500;
+  border-left: 5px solid crimson;
+  border-radius: 5px;
+}
+
+.html-intro li {
+  line-height: 1.7;
+}
+
+.nav-items {
+  list-style: none;
+  width: 100%;
+}
+.nav-items li {
+  border-bottom: 1px solid #efefef;
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+}
+
+header h3 {
+  margin: 1rem 0;
+}
+
+code {
+  font-size: 16px;
+  font-family: "Fira Code", monospace;
+}
+.snapcode {
+  background: #fff;
+}
+.tagcolor {
+  color: #0000cd;
+}
+
+.doc {
+  color: #a52a2a;
+}
+
+.html {
+  color: #ff0000;
+}
+
+.slash {
+  color: #a52a2a;
+}
+.big_h1,
+.big_h2,
+.big_h3,
+.big_h4,
+.big_h5,
+.big_h6 {
+  font-weight: bold;
+}
+.big_h1 {
+  font-size: 2rem;
+}
+
+.big_h2 {
+  font-size: 1.75rem;
+}
+
+.big_h3 {
+  font-size: 1.5rem;
+}
+
+.big_h4 {
+  font-size: 1.25rem;
+}
+
+.big_h5 {
+  font-size: 1.125rem;
+}
+
+.big_h6 {
+  font-size: 1rem;
+}

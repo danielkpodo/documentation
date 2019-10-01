@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML5 Technical Documentation</title>
+    <script src="https://kit.fontawesome.com/28de576615.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/html5.png" type="image/png">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <main id="main-doc" class="content">
+            <section class="main-section" id="HTML5_Introduction">
+                <header>
+                    <h2>HTML5 Introduction</h2>
+                </header>
+                <p>
+                    Hypertext Markup Language (HTML) is the standard markup language for documents designed to be
+                    displayed in a web
+                    browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting
+                    languages such as
+                    JavaScript.
+                    Web browsers receive HTML documents from a web server or from local storage and render the documents
+                    into multimedia web
+                    pages. HTML describes the structure of a web page semantically and originally included cues for the
+                    appearance of the
+                    document.
+                </p>
+                <p>
+                    HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects
+                    such as interactive
+                    forms may be embedded into the rendered page. HTML provides a means to create structured documents
+                    by denoting
+                    structural semantics for text such as headings, paragraphs, lists, links, quotes and other items.
+                </p>
+                <div class="snapshot">
+                    <ul class="html-intro">
+                        <li>HTML stands for Hyper Text Markup Language</li>
+                        <li>HTML describes the structure of a Web page</li>
+                        <li>HTML consists of a series of elements</li>
+                        <li>HTML elements tell the browser how to display the content</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="main-section" id="Document_Structure">
+                <header>
+                    <h2>Document Structure</h2>
+                </header>
+                <p>Before you can start adding content to your document, there's a basic structure you need to set
+                    up in your file.This structure isn't only required for your document to be compliant but will
+                    also allow you to provide useful
+                    information about your document. </p>
+                <p>The basic structure of any HTML document consists of the
+                    following sections or
+                    elements:</p>
+                <div class="snapshot">
+                    <ul class="html-intro">
+                        <li>The DTD (!DOCTYPE declaration).</li>
+                        <li>The main container (html element).</li>
+                        <li>The head section (head element).</li>
+                        <li>The body section (body element).</li>
+                    </ul>
+                </div>
+                <header>
+                    <h3>Basic Page Structure</h3>
+                </header>
+                <div class="snapshot snapcode">
+                    <code>
+                        <pre>
+<span class="tagcolor">&lt;</span><span class="doc">!DOCTYPE</span><span class="html"> html</span><span class="tagcolor">&gt;</span>
+<span class="tagcolor">&lt;</span>html lang="en"<span class="tagcolor">&gt;</span>
+<span class="tagcolor">&lt;</span>head<span class="tagcolor">&gt;</span>
+<span class="tagcolor">&lt;</span>title<span class="tagcolor">&gt;</span>Document Title <span class="tagcolor">&lt;</span><span class="slash">&#47;</span>title<span class="tagcolor">&gt;</span>
+<span class="tagcolor">&lt;</span><span class="slash">&#47;</span>head<span class="tagcolor">&gt;</span>
+<span class="tagcolor">&lt;</span>body<span class="tagcolor">&gt;</span>
+
+<span class="tagcolor">&lt;</span>h1<span class="tagcolor">&gt;</span> PAGE CONTENT GOES HERE <span class="tagcolor">&lt;</span><span class="slash">&#47;</span>h1<span class="tagcolor">&gt;</span>
+
+<span class="tagcolor">&lt;</span><span class="slash">&#47;</span>body<span class="tagcolor">&gt;</span>
+<span class="tagcolor">&lt;</span><span class="slash">&#47;</span>html<span class="tagcolor">&gt;</span>
+                        </pre>
+                    </code>
+                </div>
+            </section>
+            <section class="main-section" id="HTML_Elements">
+                <header>
+                    <h2>HTML Elements</h2>
+                </header>
+                <p>An HTML element is an individual component of an HTML (Hypertext Markup Language) document or web
+                    page.[vague] HTML is
+                    composed of a tree of HTML nodes, such as text nodes. Each node can have HTML attributes specified.
+                    Nodes can also have
+                    content, including other nodes and text. Many HTML nodes represent semantics, or meaning. For
+                    example, the &lt;title&gt; node
+                    represents the title of the document.</p>
+                <p>An HTML element usually consists of the following essentials: </p>
+                <div class="snapshot">
+                    <ul class="html-intro">
+                        <li>It has a start tag and an end tag</li>
+                        <li>A content is inserted in between them</li>
+                        <li>They can be nested</li>
+
+                    </ul>
+                </div>
+                <header>
+                    <h3>A Typical HTML Element Illustrations!</h3>
+                </header>
+                <div class="snapshot snapcode">
+                    <code>
+                       <pre>
+<span class="tagcolor">&lt;</span>h1<span class="tagcolor">&gt;</span>This is an h1 element <span
+class="tagcolor">&lt;</span><span class="slash">&#47;</span>h1<span class="tagcolor">&gt;</span>
+<span class="tagcolor">&lt;</span>p<span class="tagcolor">&gt;</span> This is an paragraph element <span
+    class="tagcolor">&lt;</span><span class="slash">&#47;</span>p<span class="tagcolor">&gt;</span>
+<span class="tagcolor">&lt;</span>a<span class="tagcolor">&gt;</span> This is an anchor element for making links <span
+        class="tagcolor">&lt;</span><span class="slash">&#47;</span>a<span class="tagcolor">&gt;</span>
+<span class="tagcolor">&lt;</span>title<span class="tagcolor">&gt;</span> Title elements are useful in <cite title="Search Engine Optimization">SEO</cite> <span
+    class="tagcolor">&lt;</span><span class="slash">&#47;</span>title<span class="tagcolor">&gt;</span>
+                       </pre>
+                   </code>
+                </div>
+
+            </section>
+            <section class="main-section" id="HTML_Attributes">
+                <header>
+                    <h2>HTML Attributes</h2>
+                </header>
+                <p>HTML attributes are special words used inside the opening tag to control the element's behaviour.
+                    HTML attributes are a
+                    modifier of an HTML element type. An attribute either modifies the default functionality of an
+                    element type or provides
+                    functionality to certain element types unable to function correctly without them. In HTML syntax, an
+                    attribute is added
+                    to an HTML start tag.</p>
+                <p>Several basic attributes types have been recognized, including: (1) required attributes, needed by a
+                    particular element
+                    type for that element type to function correctly; (2) optional attributes, used to modify the
+                    default functionality of
+                    an element type; (3) standard attributes, supported by many element types; and (4) event attributes,
+                    used to cause
+                    element types to specify scripts to be run under specific circumstances.</p>
+                <p>Attributes provide additional information about HTML elements.</p>
+                <div class="snapshot">
+                    <ul class="html-intro">
+                        <li>All HTML elements can have <strong>attributes</strong></li>
+                        <li>Attributes provide <strong>additional information</strong> about an element</li>
+                        <li>Attributes are always specified in <strong>the start tag</strong></li>
+                        <li>Attributes usually come in name/value pairs like: <strong>name="value"</strong></li>
+                    </ul>
+                </div>
+                <header>
+                    <h3>Using of HTML Attributes</h3>
+                </header>
+                <div class="snapshot snapcode">
+                    <code>
+                    <pre>
+<span class="tagcolor">&lt;</span>a href="https://www.w3schools.com"<span class="tagcolor">&gt;</span><a href="https://www.w3schools.com/html/html_attributes.asp" target="_blank">This is a link to w3schools</a><span class="slash"><span class="tagcolor">&lt;</span>&#47;</span>a<span class="tagcolor">&gt;</span>
+                    </pre>
+                </code>
+                </div>
+
+            </section>
+
+            <section class="main-section" id="HTML_Headings">
+                <header>
+                    <h2>HTML Headings</h2>
+                </header>
+                <p>
+                    HTML5 headings make it easy to syndicate and reuse content, without breaking the heading hierarchy.
+                    Using HTML5 headings
+                    and keeping the heading hierarchy backwards compatible proves unexpectedly complicated though. The
+                    HTML5 specification
+                    has a solution, but is it the right one?
+                </p>
+
+                <p>HTML5 uses sectioning content to break a page up into chunks. The &lt;article&gt;, &lt;aside&gt;,
+                    &lt;nav&gt; and &lt;section&gt; elements can
+                    be used to explicitly create sections. Here’s what the HTML5 specification says about sectioning
+                    content:</p>
+                <blockquote class="snapshot">
+                    <em>Sectioning content is content that defines the scope of headings and footers… Each sectioning
+                        content element
+                        potentially has a heading and an outline.</em>
+                </blockquote>
+                <header>
+                    <h3>Headings Example</h3>
+                </header>
+                <div class="snapshot snapcode">
+                    <code>
+                            <pre>
+<span class="tagcolor">&lt;</span>h1<span class="tagcolor">&gt;</span><span class="big_h1">This is an h1 element</span> <span
+            class="tagcolor">&lt;</span><span class="slash">&#47;</span>h1<span class="tagcolor">&gt;</span>
+<span class="tagcolor">&lt;</span>h2<span class="tagcolor">&gt;</span><span class="big_h2">This is an h2 element</span><span class="tagcolor">&lt;</span><span class="slash">&#47;</span>h2<span class="tagcolor">&gt;</span>
+<span class="tagcolor">&lt;</span>h3<span class="tagcolor">&gt;</span><span class="big_h3">This is an h3 element</span><span class="tagcolor">&lt;</span><span class="slash">&#47;</span>h3<span class="tagcolor">&gt;</span>
+<span class="tagcolor">&lt;</span>h4<span class="tagcolor">&gt;</span><span class="big_h4">This is an h4 element</span><span class="tagcolor">&lt;</span><span class="slash">&#47;</span>h4<span class="tagcolor">&gt;</span>
+<span class="tagcolor">&lt;</span>h5<span class="tagcolor">&gt;</span><span class="big_h5">This is an h5 element</span><span class="tagcolor">&lt;</span><span class="slash">&#47;</span>h5<span class="tagcolor">&gt;</span>
+<span class="tagcolor">&lt;</span>h6<span class="tagcolor">&gt;</span><span class="big_h6">This is an h6 element</span><span class="tagcolor">&lt;</span><span class="slash">&#47;</span>h6<span class="tagcolor">&gt;</span>
+                            </pre>
+                </code>
+                </div>
+            </section>
+        </main>
+        <nav id="navbar" class="sidebar">
+            <header>
+                <h1>HTML5 DOCUMENTATION</h1>
+            </header>
+            <ul class="nav-items">
+                <li><a href="#HTML5_Introduction">HTML Introduction</a></li>
+                <li><a href="#Document_Structure">HTML Document Structure</a></li>
+                <li><a href="#HTML_Elements">HTML Elements</a></li>
+                <li><a href="#HTML_Attributes">HTML Attributes</a></li>
+                <li><a href="#HTML_Headings">HTML Headings</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    </script>
+</body>
+
+</html>
