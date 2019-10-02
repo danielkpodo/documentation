@@ -24,6 +24,7 @@ body {
   -webkit-font-smoothing: antialiased;
   line-height: 1.6;
 }
+
 h1,
 h2,
 h3,
@@ -162,4 +163,41 @@ code {
 
 .big_h6 {
   font-size: 1rem;
+}
+
+.text-changer {
+  color: crimson;
+}
+
+.color-grop {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+}
+
+.color-grop div {
+  padding: 1rem 0.625rem;
+}
+
+.orange {
+  background: orange;
+}
+
+.violet {
+  background: violet;
+}
+
+.tomato {
+  background: tomato;
+}
+
+.dodgerblue {
+  background: dodgerblue;
+}
+
+.html-img {
+  margin: 0 auto;
+  max-width: 100%;
+  display: block;
 }

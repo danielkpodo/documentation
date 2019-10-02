@@ -16,9 +16,9 @@
 <body>
     <div id="wrapper">
         <main id="main-doc" class="content">
-            <section class="main-section" id="HTML5_Introduction">
+            <section class="main-section" id="HTML_Introduction">
                 <header>
-                    <h2>HTML5 Introduction</h2>
+                    <h2>HTML Introduction</h2>
                 </header>
                 <p>
                     Hypertext Markup Language (HTML) is the standard markup language for documents designed to be
@@ -48,9 +48,9 @@
                     </ul>
                 </div>
             </section>
-            <section class="main-section" id="Document_Structure">
+            <section class="main-section" id="HTML_Document_Structure">
                 <header>
-                    <h2>Document Structure</h2>
+                    <h2> HTML Document Structure</h2>
                 </header>
                 <p>Before you can start adding content to your document, there's a basic structure you need to set
                     up in your file.This structure isn't only required for your document to be compliant but will
@@ -205,17 +205,174 @@ class="tagcolor">&lt;</span><span class="slash">&#47;</span>h1<span class="tagco
                 </code>
                 </div>
             </section>
+            <section class="main-section" id="HTML_Paragraphs">
+                <header>
+                    <h2>HTML Paragraphs</h2>
+                </header>
+                <p>The HTML &lt;p&gt; element represents a paragraph. Paragraphs are usually represented in visual media
+                    as blocks of text
+                    separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can
+                    be any
+                    structural grouping of related content, such as images or form fields.</p>
+                <p>Paragraphs are block-level elements, and notably will automatically close if another block-level
+                    element is parsed
+                    before the closing </p>
+                <div class="snapshot">
+                    <ul class="html-intro">
+                        <li>The HTML &lt;p&gt; element defines a paragraph:</li>
+                        <li>With HTML, you cannot change the output by adding extra spaces or extra lines in your HTML
+                            codee</li>
+                    </ul>
+                </div>
+                <header>
+                    <h3>How to use Paragraphs in a Webpage</h3>
+                </header>
+                <div class="snapshot snapcode">
+                    <span class="tagcolor">&lt;</span>p<span class="tagcolor">&gt;</span>My name is <strong>Daniel
+                        Narh</strong>, and I
+                    am a React Developer, and a <em>Disease Control Officer</em>
+                    <span class="tagcolor">&lt;</span><span class="slash">&#47;</span>p<span
+                        class="tagcolor">&gt;</span>
+                </div>
+            </section>
+            <section class="main-section" id="HTML_Styling">
+                <header>
+                    <h2>HTML Styling</h2>
+                </header>
+                <p>Setting the style of an HTML element, can be done with the <span
+                        class="text-changer"><strong>style</strong></span>
+                    attribute.</p>
+                <p>The HTML <span class="text-changer"><strong>style</strong></span> attribute has the following syntax:
+                </p>
+                <div class="snapshot snapcode">
+                    <code>
+                                        <pre>
+&lt;tagname style="property:value;" &#47;&gt;
+                                        </pre>
+                                    </code>
+                </div>
+                <header>
+                    <h3>Using the style attribute for html styling</h3>
+                </header>
+                <div class="snaphshot snapcode">
+                    <code>
+                       <pre>
+<span class="tagcolor">&lt;</span><span class="doc">body</span><span class="html"> style="background: midnightblue"</span><span
+    class="tagcolor">&gt;</span>
+                       </pre>
+                   </code>
+                </div>
+            </section>
+            <section class="main-section" id="HTML_Formatting">
+                <header>
+                    <h2>HTML Formatting</h2>
+                </header>
+                <p>
+                    In the previous chapter, you learned about the HTML style attribute.
+                    HTML also defines special elements for defining text with a special meaning.
+                    HTML uses elements like <span class="text-changer">&lt;b&gt;</span> and <span
+                        class="text-changer">&lt;i&gt;</span> for formatting output,
+                    like bold or italic text.
+                    Formatting elements were designed to display special types of text:
+                </p>
+                <div class="snapshot">
+                    <ul class="html-intro">
+                        <li><span class="text-changer">&lt;b&gt;</span> - Bold Text</li>
+                        <li><span class="text-changer">&lt;strong&gt;</span> - Strong Text</li>
+                        <li><span class="text-changer">&lt;i&gt;</span> - Italic Text</li>
+                        <li><span class="text-changer">&lt;em&gt;</span> - Emphasis Text</li>
+                        <li><span class="text-changer">&lt;mark&gt;</span> - Mark Text</li>
+                        <li><span class="text-changer">&lt;ins&gt;</span> - Inserted Text</li>
+                        <li><span class="text-changer">&lt;sub&gt;</span> - Subscript Text</li>
+                        <li><span class="text-changer">&lt;sup&gt;</span> - Superscript Text</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="main-section" id="HTML_Quotations">
+                <header>
+                    <h2>HTML Quotations</h2>
+                </header>
+                <p>Here is a quote from WWF's website</p>
+                <q>For 50 years, WWF has been protecting the future of nature. The world's leading conservation
+                    organization, WWF works in
+                    100 countries and is supported by 1.2 million members in the United States and close to 5
+                    million globally.</q>
+                <p>
+                    The HTML <span class="text-changer">&lt;q&gt;</span> element defines a short quotation. Browsers
+                    usually insert quotation marks around the <span class="text-changer">&lt;q&gt;</span> element
+                </p>
+                <header>
+                    <h3>Using the Quote Element</h3>
+                </header>
+                <div class="snapshot">
+                    <span class="text-changer">&lt;p&gt;</span>WWF's goal is to: <span
+                        class="text-changer">&lt;q&gt;</span>Build a future where people live in
+                    harmony with nature.</WWF's><span class="text-changer">&lt;&#47;q&gt;</span><span
+                        class="text-changer"> &lt;p&gt;</span>
+                </div>
+            </section>
+            <section class="main-section" id="HTML_Comments">
+                <header>
+                    <h2>HTML Comments</h2>
+                </header>
+                <p>Comment tags are used to insert comments in the HTML source code.You can add comments to your HTML
+                    source by using the following syntax:</p>
+                <div class="snapshot snapcode">
+                    &lt; !-- Write your comments here -- &gt;
+                </div>
+            </section>
+            <section class="main-section" id="HTML_Colors">
+                <header>
+                    <h2>HTML Colors</h2>
+                </header>
+                <p>
+                    HTML colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values
+                </p>
+                <div class="color-grop">
+                    <div class="tomato">Tomato</div>
+                    <div class="orange">Orange</div>
+                    <div class="dodgerblue">DodgerBlue</div>
+                    <div class="violet">Violet</div>
+                </div>
+            </section>
+            <section class="main-section" id="HTML_Images">
+                <header>
+                    <h2>HTML Images</h2>
+                </header>
+                <p>Images can improve the design and the appearance of a web page.</p>
+                <header>
+                    <h3>Using Images in a Webpage</h3>
+                </header>
+                <div class="snapshot snapcode">
+                    <code>
+                            <pre>
+<span class="tagcolor">&lt;</span><span class="doc">img</span> src="images/html5.jpg" alt="HTML5 markup lang"</span></span><span class="tagcolor">&#47;&gt;</span>
+                            </pre>
+                        </code>
+                </div><br>
+                <div class="snapshot">
+                    <img src="./images/html5.png" alt="HTML image logo" class="html-img" />
+                </div>
+            </section> -->
         </main>
         <nav id="navbar" class="sidebar">
             <header>
                 <h1>HTML5 DOCUMENTATION</h1>
             </header>
             <ul class="nav-items">
-                <li><a href="#HTML5_Introduction">HTML Introduction</a></li>
-                <li><a href="#Document_Structure">HTML Document Structure</a></li>
-                <li><a href="#HTML_Elements">HTML Elements</a></li>
-                <li><a href="#HTML_Attributes">HTML Attributes</a></li>
-                <li><a href="#HTML_Headings">HTML Headings</a></li>
+                <li><a href="#HTML_Introduction" class="nav-link">HTML Introduction</a></li>
+                <li><a href="#HTML_Document_Structure" class="nav-link">HTML Document Structure</a></li>
+                <li><a href="#HTML_Elements" class="nav-link">HTML Elements</a></li>
+                <li><a href="#HTML_Attributes" class="nav-link">HTML Attributes</a></li>
+                <li><a href="#HTML_Headings" class="nav-link">HTML Headings</a></li>
+                <li><a href="#HTML_Paragraphs" class="nav-link">HTML Paragraphs</a></li>
+                <li><a href="#HTML_Styling" class="nav-link">HTML Styling</a></li>
+                <li><a href="#HTML_Formatting" class="nav-link">HTML Formatting</a></li>
+                <li><a href="#HTML_Quotations" class="nav-link">HTML Quotations</a></li>
+                <li><a href="#HTML_Comments" class="nav-link">HTML Comments</a></li>
+                <li><a href="#HTML_Colors" class="nav-link">HTML Colors</a></li>
+                <li><a href="#HTML_Images" class="nav-link">HTML Images</a></li>
+
             </ul>
         </nav>
     </div>
