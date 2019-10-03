@@ -31,33 +31,31 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Consolas;
+  font-family: "Roboto", sans-serif;
   color: crimson;
 }
-#wrapper {
+
+.wrapper {
   display: grid;
-  grid-gap: 20px;
-  grid-template-areas: "sidebar . content content . ";
+  grid-gap: 1.25em;
+  grid-template-areas: "sidebar content";
 }
 
 p {
   margin-bottom: 1.5rem;
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 .content {
   grid-area: content;
-  margin-left: 300px;
-  max-width: 800px;
+  margin-left: 18.75rem;
+  max-width: 65%;
   padding: 1.5rem 1rem;
 }
+
 .main-section {
   margin: 1rem 0;
-}
-.sidebar {
-  grid-area: sidebar;
-  padding: 0 1rem;
-  border-right: 3px solid #eee;
+  padding: 0 0.625rem;
 }
 
 .sidebar a {
@@ -68,8 +66,12 @@ p {
 .sidebar h1 {
   margin: 1rem 0;
 }
+
 #navbar {
-  max-width: 300px;
+  border-right: 3px solid #efefef;
+  grid-area: sidebar;
+  padding: 0 1rem;
+  max-width: 18.75em;
   position: fixed;
   left: 0;
   top: 0;
@@ -103,8 +105,20 @@ p {
 }
 .nav-items li {
   border-bottom: 1px solid #efefef;
-  margin: 0 0 10px;
-  padding: 0 0 10px;
+  margin: 0 0 0.625rem;
+  padding: 0 0 0.625rem;
+}
+
+.nav-items li > a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.25px;
+  transition: 400ms ease-in;
+}
+
+.nav-items li > a:hover {
+  color: crimson;
 }
 
 header h3 {
@@ -112,7 +126,7 @@ header h3 {
 }
 
 code {
-  font-size: 16px;
+  font-size: 1rem;
   font-family: "Fira Code", monospace;
 }
 .snapcode {
@@ -200,4 +214,30 @@ code {
   margin: 0 auto;
   max-width: 100%;
   display: block;
+}
+
+@media screen and (max-width: 850px) {
+  .color-grop {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #navbar {
+    border-right: 3px solid #efefef;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    overflow: hidden;
+  }
+
+  .nav-items li > a {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .color-grop {
+    grid-template-columns: 1fr;
+  }
 }
