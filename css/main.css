@@ -22,7 +22,7 @@ body {
   font-weight: 500;
   font-family: "Nunito", sans-serif;
   -webkit-font-smoothing: antialiased;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 h1,
@@ -126,7 +126,7 @@ header h3 {
 }
 
 code {
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-family: "Fira Code", monospace;
 }
 .snapcode {
@@ -145,7 +145,7 @@ code {
 }
 
 .slash {
-  color: #a52a2a;
+  color: #0000cd;
 }
 .big_h1,
 .big_h2,
@@ -156,27 +156,27 @@ code {
   font-weight: bold;
 }
 .big_h1 {
-  font-size: 2rem;
-}
-
-.big_h2 {
-  font-size: 1.75rem;
-}
-
-.big_h3 {
   font-size: 1.5rem;
 }
 
+.big_h2 {
+  font-size: 1.3rem;
+}
+
+.big_h3 {
+  font-size: 1.2rem;
+}
+
 .big_h4 {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 
 .big_h5 {
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 .big_h6 {
-  font-size: 1rem;
+  font-size: 0.625rem;
 }
 
 .text-changer {
@@ -232,7 +232,7 @@ code {
   }
 
   .nav-items li > a {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 
